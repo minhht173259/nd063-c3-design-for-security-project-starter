@@ -1,5 +1,12 @@
 
 
 # Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+1. Restricts IPs which are able to access ec2
+2. Move the Web Application to a private VPC, and access it by API Gateway
+3. Adding Resource Policies to restrict people who is able to access, and also limit actions on the resource.
+
 
 # Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+1. Use KMS to encrypted data
+2. Use resource policies to limit actions and users
+ 

@@ -1,3 +1,9 @@
 Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+1. HTTP is setup for ALB.
+2. ALB is not setup to drop HTTP header 
+3. EBS Encryption is not enable
 
 Bonus - provide recommendations on how to remediate the vulnerabilities.
+1. Must change to HTTPS
+2. routing.http.drop_invalid_header_fields.enabled is set to true
+3. Turn-on EBS Encrypytion
